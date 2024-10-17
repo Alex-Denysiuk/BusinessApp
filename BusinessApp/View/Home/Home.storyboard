@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,18 +16,157 @@
                     <view key="view" contentMode="scaleToFill" id="bsR-52-0Lp">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXL-Sh-nEB">
+                                <rect key="frame" x="20" y="79" width="353" height="413"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZxB-i4-Us5">
+                                        <rect key="frame" x="20" y="20" width="313" height="373"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ZxB-i4-Us5" secondAttribute="bottom" constant="20" id="6nh-1r-xNt"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZxB-i4-Us5" secondAttribute="trailing" constant="20" id="WUy-93-gq3"/>
+                                    <constraint firstItem="ZxB-i4-Us5" firstAttribute="top" secondItem="cXL-Sh-nEB" secondAttribute="top" constant="20" id="idh-vJ-wqm"/>
+                                    <constraint firstItem="ZxB-i4-Us5" firstAttribute="leading" secondItem="cXL-Sh-nEB" secondAttribute="leading" constant="20" id="quJ-Wp-chS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="uZ5-UJ-v4b">
+                                <rect key="frame" x="20" y="532" width="353" height="266"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DiY-E7-dEf">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="m8H-Lw-dfh"/>
+                                        </constraints>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Services"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="services:" destination="Lap-r6-66I" eventType="touchUpInside" id="Rfa-ig-H1s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzK-s9-yLh">
+                                        <rect key="frame" x="0.0" y="54" width="353" height="50"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Xzh-Fr-I6m"/>
+                                        </constraints>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Portfolio"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="portfolio:" destination="Lap-r6-66I" eventType="touchUpInside" id="5hZ-cF-YLo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUu-U2-D87">
+                                        <rect key="frame" x="0.0" y="108" width="353" height="50"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Pgh-DN-PRl"/>
+                                        </constraints>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="About Us"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="aboutUs:" destination="Lap-r6-66I" eventType="touchUpInside" id="kWS-KS-Ehq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8G-cK-bES">
+                                        <rect key="frame" x="0.0" y="162" width="353" height="50"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Qcv-G4-dCR"/>
+                                        </constraints>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Contact Us"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="contactUs:" destination="Lap-r6-66I" eventType="touchUpInside" id="2n6-vS-KMR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJY-Vf-X8r">
+                                        <rect key="frame" x="0.0" y="216" width="353" height="50"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="vBr-xl-tbH"/>
+                                        </constraints>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Social"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="social:" destination="Lap-r6-66I" eventType="touchUpInside" id="UNq-XV-eJS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="W7h-oW-yiG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uZ5-UJ-v4b" firstAttribute="top" secondItem="cXL-Sh-nEB" secondAttribute="bottom" constant="40" id="0yK-Ks-Pqt"/>
+                            <constraint firstItem="W7h-oW-yiG" firstAttribute="trailing" secondItem="uZ5-UJ-v4b" secondAttribute="trailing" constant="20" id="5WL-yb-EeS"/>
+                            <constraint firstItem="uZ5-UJ-v4b" firstAttribute="leading" secondItem="W7h-oW-yiG" secondAttribute="leading" constant="20" id="HxE-Ih-KI6"/>
+                            <constraint firstItem="W7h-oW-yiG" firstAttribute="bottom" secondItem="uZ5-UJ-v4b" secondAttribute="bottom" constant="20" id="Q2Z-7B-Jhx"/>
+                            <constraint firstItem="cXL-Sh-nEB" firstAttribute="top" secondItem="W7h-oW-yiG" secondAttribute="top" constant="20" id="jPc-Et-XnN"/>
+                            <constraint firstItem="W7h-oW-yiG" firstAttribute="trailing" secondItem="cXL-Sh-nEB" secondAttribute="trailing" constant="20" id="mea-ik-EgG"/>
+                            <constraint firstItem="cXL-Sh-nEB" firstAttribute="leading" secondItem="W7h-oW-yiG" secondAttribute="leading" constant="20" id="nvC-ty-2ac"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="iza-CX-ttc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEM-GU-Re9" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="923" y="-27"/>
+            <point key="canvasLocation" x="922.90076335877859" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Logo" width="175.33332824707031" height="149.33332824707031"/>
         <image name="house" catalog="system" width="128" height="104"/>
+        <namedColor name="AccentColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

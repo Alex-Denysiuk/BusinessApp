@@ -28,4 +28,30 @@
 }
 */
 
+- (IBAction)services:(id)sender {
+    
+    [(UITabBarController *) self.tabBarController setSelectedIndex:2];
+    
+}
+
+- (IBAction)portfolio:(id)sender {
+    
+    [(UITabBarController *) self.tabBarController setSelectedIndex:3];
+}
+
+- (IBAction)aboutUs:(id)sender {
+    
+    [(UITabBarController *) self.tabBarController setSelectedIndex:1];
+}
+
+- (IBAction)contactUs:(id)sender {
+    
+    [(UITabBarController *) self.tabBarController setSelectedIndex:4];
+}
+
+- (IBAction)social:(id)sender {
+    
+    [(UITabBarController *) self.tabBarController setSelectedIndex:5];
+}
+
 @end

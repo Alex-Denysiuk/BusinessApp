@@ -28,4 +28,9 @@
 }
 */
 
+- (IBAction)contactUsButton:(id)sender {
+    
+    [(UITabBarController *) self.tabBarController setSelectedIndex:4];
+}
+
 @end

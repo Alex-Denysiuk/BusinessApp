@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D715DED12CC1820800557E9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D715DED02CC1820800557E9C /* Main.storyboard */; };
+		D715DEC02CC14F8D00557E9C /* ServicesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D715DEBF2CC14F8D00557E9C /* ServicesTableViewCell.m */; };
+		D715DEC62CC1528B00557E9C /* ServiceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D715DEC52CC1528B00557E9C /* ServiceList.plist */; };
+		D715DEC82CC159F200557E9C /* ServiceDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D715DEC72CC159F200557E9C /* ServiceDetail.storyboard */; };
+		D715DECB2CC15A3300557E9C /* ServiceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D715DECA2CC15A3300557E9C /* ServiceDetailViewController.m */; };
 		D724E4952CC035030022E0C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D724E4942CC035030022E0C0 /* AppDelegate.m */; };
 		D724E4982CC035030022E0C0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D724E4972CC035030022E0C0 /* SceneDelegate.m */; };
 		D724E4A02CC035040022E0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D724E49F2CC035040022E0C0 /* Assets.xcassets */; };
@@ -48,6 +52,12 @@
 
 /* Begin PBXFileReference section */
 		D715DED02CC1820800557E9C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D715DEBE2CC14F8D00557E9C /* ServicesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServicesTableViewCell.h; sourceTree = "<group>"; };
+		D715DEBF2CC14F8D00557E9C /* ServicesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServicesTableViewCell.m; sourceTree = "<group>"; };
+		D715DEC52CC1528B00557E9C /* ServiceList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ServiceList.plist; sourceTree = "<group>"; };
+		D715DEC72CC159F200557E9C /* ServiceDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ServiceDetail.storyboard; sourceTree = "<group>"; };
+		D715DEC92CC15A3300557E9C /* ServiceDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceDetailViewController.h; sourceTree = "<group>"; };
+		D715DECA2CC15A3300557E9C /* ServiceDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceDetailViewController.m; sourceTree = "<group>"; };
 		D724E4902CC035030022E0C0 /* BusinessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D724E4932CC035030022E0C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D724E4942CC035030022E0C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -106,6 +116,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D715DEBD2CC14F6000557E9C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D715DEBE2CC14F8D00557E9C /* ServicesTableViewCell.h */,
+				D715DEBF2CC14F8D00557E9C /* ServicesTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D715DEC42CC1525F00557E9C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D715DEC52CC1528B00557E9C /* ServiceList.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		D724E4872CC035030022E0C0 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +156,7 @@
 		D724E4922CC035030022E0C0 /* BusinessApp */ = {
 			isa = PBXGroup;
 			children = (
+				D715DEC42CC1525F00557E9C /* Resources */,
 				D788EAF62CC11ACC007F59B5 /* Controller */,
 				D724E4C82CC0540B0022E0C0 /* View */,
 				D724E4932CC035030022E0C0 /* AppDelegate.h */,
@@ -201,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				D788EB122CC12681007F59B5 /* Services.storyboard */,
+				D715DEC72CC159F200557E9C /* ServiceDetail.storyboard */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -273,8 +302,11 @@
 		D788EB012CC11DBB007F59B5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D715DEBD2CC14F6000557E9C /* Cell */,
 				D788EB062CC11E02007F59B5 /* ServicesViewController.h */,
 				D788EB072CC11E02007F59B5 /* ServicesViewController.m */,
+				D715DEC92CC15A3300557E9C /* ServiceDetailViewController.h */,
+				D715DECA2CC15A3300557E9C /* ServiceDetailViewController.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -397,6 +429,9 @@
 				D788EB102CC125B9007F59B5 /* AboutUs.storyboard in Resources */,
 				D788EB172CC13AFC007F59B5 /* ContactUs.storyboard in Resources */,
 				D724E4CF2CC0577B0022E0C0 /* Home.storyboard in Resources */,
+				D715DEC62CC1528B00557E9C /* ServiceList.plist in Resources */,
+				D715DEC82CC159F200557E9C /* ServiceDetail.storyboard in Resources */,
+				D724E49E2CC035030022E0C0 /* Base in Resources */,
 				D788EB132CC12681007F59B5 /* Services.storyboard in Resources */,
 				D788EB152CC12D0E007F59B5 /* Portfolio.storyboard in Resources */,
 			);
@@ -426,8 +461,10 @@
 				D788EB082CC11E02007F59B5 /* ServicesViewController.m in Sources */,
 				D788EB0B2CC11E10007F59B5 /* PortfolioViewController.m in Sources */,
 				D724E4952CC035030022E0C0 /* AppDelegate.m in Sources */,
+				D715DEC02CC14F8D00557E9C /* ServicesTableViewCell.m in Sources */,
 				D788EB0E2CC11E2F007F59B5 /* ContactUsViewController.m in Sources */,
 				D724E4A62CC035040022E0C0 /* main.m in Sources */,
+				D715DECB2CC15A3300557E9C /* ServiceDetailViewController.m in Sources */,
 				D788EB052CC11DF1007F59B5 /* AboutUsViewController.m in Sources */,
 				D724E4982CC035030022E0C0 /* SceneDelegate.m in Sources */,
 				D788EAFE2CC11D7B007F59B5 /* HomeViewController.m in Sources */,

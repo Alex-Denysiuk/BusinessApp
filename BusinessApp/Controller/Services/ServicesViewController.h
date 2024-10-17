@@ -9,7 +9,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ServicesViewController : UIViewController
+@interface ServicesViewController : UITableViewController {
+    
+    NSMutableArray *dataSelect;
+    
+}
 
 @end
 

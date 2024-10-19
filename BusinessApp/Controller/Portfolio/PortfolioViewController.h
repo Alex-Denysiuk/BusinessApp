@@ -9,7 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PortfolioViewController : UIViewController
+@interface PortfolioViewController : UICollectionViewController <UICollectionViewDelegate, UICollectionViewDataSource>
+
+@property (copy, nonatomic) NSArray *imageItemsArray;
 
 @end
 

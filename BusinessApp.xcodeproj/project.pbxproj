@@ -35,6 +35,10 @@
 		D788EB132CC12681007F59B5 /* Services.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D788EB122CC12681007F59B5 /* Services.storyboard */; };
 		D788EB152CC12D0E007F59B5 /* Portfolio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D788EB142CC12D0E007F59B5 /* Portfolio.storyboard */; };
 		D788EB172CC13AFC007F59B5 /* ContactUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D788EB162CC13AFC007F59B5 /* ContactUs.storyboard */; };
+		D7AF28A22CC4237E00A14AD3 /* Social.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7AF28A12CC4237E00A14AD3 /* Social.storyboard */; };
+		D7AF28A52CC42A8600A14AD3 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AF28A42CC42A8600A14AD3 /* SocialViewController.m */; };
+		D7AF28AC2CC42C4900A14AD3 /* SocialTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AF28AB2CC42C4900A14AD3 /* SocialTableViewCell.m */; };
+		D7AF28AE2CC42E5000A14AD3 /* Social.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7AF28AD2CC42E5000A14AD3 /* Social.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +104,12 @@
 		D788EB122CC12681007F59B5 /* Services.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Services.storyboard; sourceTree = "<group>"; };
 		D788EB142CC12D0E007F59B5 /* Portfolio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Portfolio.storyboard; sourceTree = "<group>"; };
 		D788EB162CC13AFC007F59B5 /* ContactUs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactUs.storyboard; sourceTree = "<group>"; };
+		D7AF28A12CC4237E00A14AD3 /* Social.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Social.storyboard; sourceTree = "<group>"; };
+		D7AF28A32CC42A8600A14AD3 /* SocialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
+		D7AF28A42CC42A8600A14AD3 /* SocialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
+		D7AF28AA2CC42C4900A14AD3 /* SocialTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialTableViewCell.h; sourceTree = "<group>"; };
+		D7AF28AB2CC42C4900A14AD3 /* SocialTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialTableViewCell.m; sourceTree = "<group>"; };
+		D7AF28AD2CC42E5000A14AD3 /* Social.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Social.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +221,7 @@
 		D724E4C82CC0540B0022E0C0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D7AF289E2CC4235100A14AD3 /* Social */,
 				D78332C52CC40DF600251A07 /* EmailUs */,
 				D724E4D52CC058030022E0C0 /* Portfolio */,
 				D724E4D02CC0579E0022E0C0 /* AboutUs */,
@@ -300,6 +311,7 @@
 		D788EAF62CC11ACC007F59B5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D7AF289D2CC4234400A14AD3 /* Social */,
 				D78332C12CC40DAC00251A07 /* EmailUs */,
 				D788EB022CC11DC7007F59B5 /* About Us */,
 				D788EB012CC11DBB007F59B5 /* Services */,
@@ -368,6 +380,34 @@
 				D788EB042CC11DF1007F59B5 /* AboutUsViewController.m */,
 			);
 			path = "About Us";
+			sourceTree = "<group>";
+		};
+		D7AF289D2CC4234400A14AD3 /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				D7AF28A62CC42BCD00A14AD3 /* Cell */,
+				D7AF28A32CC42A8600A14AD3 /* SocialViewController.h */,
+				D7AF28A42CC42A8600A14AD3 /* SocialViewController.m */,
+				D7AF28AD2CC42E5000A14AD3 /* Social.plist */,
+			);
+			path = Social;
+			sourceTree = "<group>";
+		};
+		D7AF289E2CC4235100A14AD3 /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				D7AF28A12CC4237E00A14AD3 /* Social.storyboard */,
+			);
+			path = Social;
+			sourceTree = "<group>";
+		};
+		D7AF28A62CC42BCD00A14AD3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D7AF28AA2CC42C4900A14AD3 /* SocialTableViewCell.h */,
+				D7AF28AB2CC42C4900A14AD3 /* SocialTableViewCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,12 +518,14 @@
 				D724E4A32CC035040022E0C0 /* Base in Resources */,
 				D78332C72CC40F2400251A07 /* EmailUs.storyboard in Resources */,
 				D788EB102CC125B9007F59B5 /* AboutUs.storyboard in Resources */,
+				D7AF28AE2CC42E5000A14AD3 /* Social.plist in Resources */,
 				D788EB172CC13AFC007F59B5 /* ContactUs.storyboard in Resources */,
 				D724E4CF2CC0577B0022E0C0 /* Home.storyboard in Resources */,
 				D715DEC62CC1528B00557E9C /* ServiceList.plist in Resources */,
 				D715DEC82CC159F200557E9C /* ServiceDetail.storyboard in Resources */,
 				D788EB132CC12681007F59B5 /* Services.storyboard in Resources */,
 				D788EB152CC12D0E007F59B5 /* Portfolio.storyboard in Resources */,
+				D7AF28A22CC4237E00A14AD3 /* Social.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +562,9 @@
 				D788EB052CC11DF1007F59B5 /* AboutUsViewController.m in Sources */,
 				D724E4982CC035030022E0C0 /* SceneDelegate.m in Sources */,
 				D78332C42CC40DEF00251A07 /* EmailUsViewController.m in Sources */,
+				D7AF28A52CC42A8600A14AD3 /* SocialViewController.m in Sources */,
 				D788EAFE2CC11D7B007F59B5 /* HomeViewController.m in Sources */,
+				D7AF28AC2CC42C4900A14AD3 /* SocialTableViewCell.m in Sources */,
 				D788EAFB2CC11C4B007F59B5 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,6 +22,7 @@
 		D724E4BA2CC035040022E0C0 /* BusinessAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D724E4B92CC035040022E0C0 /* BusinessAppUITests.m */; };
 		D724E4BC2CC035040022E0C0 /* BusinessAppUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D724E4BB2CC035040022E0C0 /* BusinessAppUITestsLaunchTests.m */; };
 		D724E4CF2CC0577B0022E0C0 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D724E4CE2CC0577B0022E0C0 /* Home.storyboard */; };
+		D78332C02CC40AA200251A07 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = D78332BF2CC40AA200251A07 /* MapPin.m */; };
 		D788EAFB2CC11C4B007F59B5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D788EAFA2CC11C4B007F59B5 /* MainViewController.m */; };
 		D788EAFE2CC11D7B007F59B5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D788EAFD2CC11D7B007F59B5 /* HomeViewController.m */; };
 		D788EB052CC11DF1007F59B5 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D788EB042CC11DF1007F59B5 /* AboutUsViewController.m */; };
@@ -76,6 +77,8 @@
 		D724E4B92CC035040022E0C0 /* BusinessAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessAppUITests.m; sourceTree = "<group>"; };
 		D724E4BB2CC035040022E0C0 /* BusinessAppUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessAppUITestsLaunchTests.m; sourceTree = "<group>"; };
 		D724E4CE2CC0577B0022E0C0 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		D78332BE2CC40AA200251A07 /* MapPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
+		D78332BF2CC40AA200251A07 /* MapPin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
 		D788EAF92CC11C4B007F59B5 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		D788EAFA2CC11C4B007F59B5 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		D788EAFC2CC11D7B007F59B5 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -262,13 +265,22 @@
 			path = Portfolio;
 			sourceTree = "<group>";
 		};
+		D78332BD2CC40A7900251A07 /* MapPin */ = {
+			isa = PBXGroup;
+			children = (
+				D78332BE2CC40AA200251A07 /* MapPin.h */,
+				D78332BF2CC40AA200251A07 /* MapPin.m */,
+			);
+			path = MapPin;
+			sourceTree = "<group>";
+		};
 		D788EAF62CC11ACC007F59B5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				D788EB022CC11DC7007F59B5 /* About Us */,
 				D788EB012CC11DBB007F59B5 /* Services */,
 				D788EB002CC11DAF007F59B5 /* Portfolio */,
-				D788EAFF2CC11DA0007F59B5 /* Contact Us */,
+				D788EAFF2CC11DA0007F59B5 /* ContactUs */,
 				D788EAF82CC11B31007F59B5 /* Main */,
 				D788EAF72CC11AEA007F59B5 /* Home */,
 			);
@@ -293,13 +305,14 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		D788EAFF2CC11DA0007F59B5 /* Contact Us */ = {
+		D788EAFF2CC11DA0007F59B5 /* ContactUs */ = {
 			isa = PBXGroup;
 			children = (
+				D78332BD2CC40A7900251A07 /* MapPin */,
 				D788EB0C2CC11E2F007F59B5 /* ContactUsViewController.h */,
 				D788EB0D2CC11E2F007F59B5 /* ContactUsViewController.m */,
 			);
-			path = "Contact Us";
+			path = ContactUs;
 			sourceTree = "<group>";
 		};
 		D788EB002CC11DAF007F59B5 /* Portfolio */ = {
@@ -476,6 +489,7 @@
 				D724E4952CC035030022E0C0 /* AppDelegate.m in Sources */,
 				D715DEC02CC14F8D00557E9C /* ServicesTableViewCell.m in Sources */,
 				D788EB0E2CC11E2F007F59B5 /* ContactUsViewController.m in Sources */,
+				D78332C02CC40AA200251A07 /* MapPin.m in Sources */,
 				D724E4A62CC035040022E0C0 /* main.m in Sources */,
 				D715DECB2CC15A3300557E9C /* ServiceDetailViewController.m in Sources */,
 				D788EB052CC11DF1007F59B5 /* AboutUsViewController.m in Sources */,

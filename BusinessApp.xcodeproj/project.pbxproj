@@ -23,6 +23,8 @@
 		D724E4BC2CC035040022E0C0 /* BusinessAppUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D724E4BB2CC035040022E0C0 /* BusinessAppUITestsLaunchTests.m */; };
 		D724E4CF2CC0577B0022E0C0 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D724E4CE2CC0577B0022E0C0 /* Home.storyboard */; };
 		D78332C02CC40AA200251A07 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = D78332BF2CC40AA200251A07 /* MapPin.m */; };
+		D78332C42CC40DEF00251A07 /* EmailUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D78332C32CC40DEF00251A07 /* EmailUsViewController.m */; };
+		D78332C72CC40F2400251A07 /* EmailUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D78332C62CC40F2400251A07 /* EmailUs.storyboard */; };
 		D788EAFB2CC11C4B007F59B5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D788EAFA2CC11C4B007F59B5 /* MainViewController.m */; };
 		D788EAFE2CC11D7B007F59B5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D788EAFD2CC11D7B007F59B5 /* HomeViewController.m */; };
 		D788EB052CC11DF1007F59B5 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D788EB042CC11DF1007F59B5 /* AboutUsViewController.m */; };
@@ -79,6 +81,9 @@
 		D724E4CE2CC0577B0022E0C0 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		D78332BE2CC40AA200251A07 /* MapPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
 		D78332BF2CC40AA200251A07 /* MapPin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
+		D78332C22CC40DEF00251A07 /* EmailUsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailUsViewController.h; sourceTree = "<group>"; };
+		D78332C32CC40DEF00251A07 /* EmailUsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailUsViewController.m; sourceTree = "<group>"; };
+		D78332C62CC40F2400251A07 /* EmailUs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmailUs.storyboard; sourceTree = "<group>"; };
 		D788EAF92CC11C4B007F59B5 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		D788EAFA2CC11C4B007F59B5 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		D788EAFC2CC11D7B007F59B5 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -206,6 +211,7 @@
 		D724E4C82CC0540B0022E0C0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D78332C52CC40DF600251A07 /* EmailUs */,
 				D724E4D52CC058030022E0C0 /* Portfolio */,
 				D724E4D02CC0579E0022E0C0 /* AboutUs */,
 				D724E4CC2CC057130022E0C0 /* Services */,
@@ -274,9 +280,27 @@
 			path = MapPin;
 			sourceTree = "<group>";
 		};
+		D78332C12CC40DAC00251A07 /* EmailUs */ = {
+			isa = PBXGroup;
+			children = (
+				D78332C22CC40DEF00251A07 /* EmailUsViewController.h */,
+				D78332C32CC40DEF00251A07 /* EmailUsViewController.m */,
+			);
+			path = EmailUs;
+			sourceTree = "<group>";
+		};
+		D78332C52CC40DF600251A07 /* EmailUs */ = {
+			isa = PBXGroup;
+			children = (
+				D78332C62CC40F2400251A07 /* EmailUs.storyboard */,
+			);
+			path = EmailUs;
+			sourceTree = "<group>";
+		};
 		D788EAF62CC11ACC007F59B5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D78332C12CC40DAC00251A07 /* EmailUs */,
 				D788EB022CC11DC7007F59B5 /* About Us */,
 				D788EB012CC11DBB007F59B5 /* Services */,
 				D788EB002CC11DAF007F59B5 /* Portfolio */,
@@ -452,6 +476,7 @@
 				D724E4A02CC035040022E0C0 /* Assets.xcassets in Resources */,
 				D715DED12CC1820800557E9C /* Main.storyboard in Resources */,
 				D724E4A32CC035040022E0C0 /* Base in Resources */,
+				D78332C72CC40F2400251A07 /* EmailUs.storyboard in Resources */,
 				D788EB102CC125B9007F59B5 /* AboutUs.storyboard in Resources */,
 				D788EB172CC13AFC007F59B5 /* ContactUs.storyboard in Resources */,
 				D724E4CF2CC0577B0022E0C0 /* Home.storyboard in Resources */,
@@ -494,6 +519,7 @@
 				D715DECB2CC15A3300557E9C /* ServiceDetailViewController.m in Sources */,
 				D788EB052CC11DF1007F59B5 /* AboutUsViewController.m in Sources */,
 				D724E4982CC035030022E0C0 /* SceneDelegate.m in Sources */,
+				D78332C42CC40DEF00251A07 /* EmailUsViewController.m in Sources */,
 				D788EAFE2CC11D7B007F59B5 /* HomeViewController.m in Sources */,
 				D788EAFB2CC11C4B007F59B5 /* MainViewController.m in Sources */,
 			);
